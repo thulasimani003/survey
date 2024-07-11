@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="logo">
+                <img src="images/beaker.jpg" alt="Acquios">
+            </div>
+            <h2>Survey Form</h2>
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label>How was your overall experience?*</label>
+            <div class="rating">
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">★</label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2">★</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3">★</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4">★</label>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">★</label>
+            </div>
+            
+            <label>Was our representative (check all that apply):</label>
+            <div class="checkboxes">
+                <input type="checkbox" id="professional" name="qualities" value="Professional">
+                <label for="professional">Professional and courteous?</label>
+                
+                <input type="checkbox" id="knowledgeable" name="qualities" value="Knowledgeable">
+                <label for="knowledgeable">Knowledgeable?</label>
+                
+                <input type="checkbox" id="friendly" name="qualities" value="Friendly">
+                <label for="friendly">Friendly?</label>
+                
+                <input type="checkbox" id="efficient" name="qualities" value="Efficient">
+                <label for="efficient">Efficient?</label>
+                
+                <input type="checkbox" id="patient" name="qualities" value="Patient">
+                <label for="patient">Patient?</label>
+                
+                <input type="checkbox" id="warm" name="qualities" value="Warm">
+                <label for="warm">Warm and respectful?</label>
+                
+                <input type="checkbox" id="clear" name="qualities" value="Clear">
+                <label for="clear">Clear and direct?</label>
+            </div>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
